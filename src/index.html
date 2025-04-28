@@ -13,24 +13,6 @@
         console.log("SRC INDEX-HTML BRAN PASSWORD:::::::::", bran);
     }
     signify_();
-    
-//      await signify.ready();
-
-// const bran = signify.randomPasscode();
-const url = 'http://127.0.0.1:3901';
-const boot_url = 'http://127.0.0.1:3903';
-const actualSignifyClient = new signify.SignifyClient(
-    url,
-    bran,
-    signify.Tier.low,
-    boot_url
-);
-
-// console.log(actualSignifyClient);
-    const client = new signify.SignifyClient("http://localhost:3901");
-    client.connect().then(() => {
-      console.log("Connected to Signify!");
-    });
   </script>
 </body>
 </html>

@@ -4,22 +4,7 @@ import * as signify from 'signify-ts';
 
 const run = async () => {
     await signify.ready();
-    const bran = signify.randomPasscode();
-    console.log("SRC INDEX-TS BRAN PASSWORD:::::::::", bran);
-
-    /* const url = 'http://127.0.0.1:3901';
-    const boot_url = 'http://127.0.0.1:3903';
-    const actualSignifyClient = new signify.SignifyClient(
-        url,
-        bran,
-        signify.Tier.low,
-        boot_url
-    );
-
-    // const actualSignifyClient = new signify.SignifyClient("http://localhost:3901");
-    actualSignifyClient.connect().then(() => {
-        console.log("Connected to Signify!");
-    });*/
+    console.log("Signify client is ready");
 };
 
 run().catch((err) => {
