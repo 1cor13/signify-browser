@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Signify Webpack Demo</title><script defer="defer" src="signify-browser.js"></script></head><body><script src="../dist/signify-browser.js"></script><script>const signify_ = async () => {
+        await signify.ready();
+        const bran = signify.randomPasscode();
+        console.log("SRC INDEX-HTML BRAN PASSWORD:::::::::", bran);
+    }
+    signify_();
+    
+//      await signify.ready();
+
+// const bran = signify.randomPasscode();
+const url = 'http://127.0.0.1:3901';
+const boot_url = 'http://127.0.0.1:3903';
+const actualSignifyClient = new signify.SignifyClient(
+    url,
+    bran,
+    signify.Tier.low,
+    boot_url
+);
+
+// console.log(actualSignifyClient);
+    const client = new signify.SignifyClient("http://localhost:3901");
+    client.connect().then(() => {
+      console.log("Connected to Signify!");
+    });</script></body></html>
