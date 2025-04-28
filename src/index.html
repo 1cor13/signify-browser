@@ -5,26 +5,26 @@
   <title>Signify Webpack Demo</title>
 </head>
 <body>
-  <script src="bundle.js"></script>
+  <script src="../dist/signify-browser.js"></script>
   <script>
     const signify_ = async () => {
         await signify.ready();
         const bran = signify.randomPasscode();
-        console.log("BRAN PASSWORD:::::::::", bran);
+        console.log("SRC INDEX-HTML BRAN PASSWORD:::::::::", bran);
     }
     signify_();
     
 //      await signify.ready();
 
 // const bran = signify.randomPasscode();
-// const url = 'http://127.0.0.1:3901';
-// const boot_url = 'http://127.0.0.1:3903';
-// const actualSignifyClient = new signify.SignifyClient(
-//     url,
-//     bran,
-//     signify.Tier.low,
-//     boot_url
-// );
+const url = 'http://127.0.0.1:3901';
+const boot_url = 'http://127.0.0.1:3903';
+const actualSignifyClient = new signify.SignifyClient(
+    url,
+    bran,
+    signify.Tier.low,
+    boot_url
+);
 
 // console.log(actualSignifyClient);
     const client = new signify.SignifyClient("http://localhost:3901");

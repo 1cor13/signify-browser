@@ -5,11 +5,12 @@ const webpack = require('webpack');
 module.exports = {
   entry: './src/index.ts',
   output: {
-    filename: 'bundle.js',
+    filename: 'signify-browser.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
-    library: 'MyApp', // optional: exposes global variable (window.MyApp)
-    libraryTarget: 'var', // needed to attach it to window
+    library: 'signify-browser', // optional: exposes global variable (window.MyApp)
+    libraryTarget: 'umd', // needed to attach it to window
+    globalObject: 'this', // needed for UMD to work in Node.js and browser
   },
   resolve: {
     extensions: ['.ts', '.js'],
