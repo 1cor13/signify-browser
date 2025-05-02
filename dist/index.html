@@ -1,18 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Signify Webpack Demo</title>
-    <script defer="defer" src="signify-browser.js"></script>
-  </head>
-  <body>
-    <script>
-      const signify_ = async () => {
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><title>Signify Webpack Demo</title><script defer="defer" src="signify-browser.js"></script></head><body><script src="../dist/signify-browser.js"></script><script>const signify_ = async () => {
         await signify.ready();
         const bran = signify.randomPasscode();
         console.log("SRC INDEX-HTML BRAN PASSWORD:::::::::", bran);
-      };
-      signify_();
-    </script>
-  </body>
-</html>
+    }
+    signify_();</script></body></html>

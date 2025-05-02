@@ -519,3 +519,32 @@ export async function waitOperation<T = any>(
 
     return op;
 }
+
+/*
+export async function waitOperationJS(
+    client,
+    op,
+    signal = undefined
+) {
+    if (typeof op === 'string') {
+        op = await client.operations().get(op);
+    }
+
+    op = await client
+        .operations()
+        .wait(op, { signal: signal ?? AbortSignal.timeout(30000) });
+    await deleteOperationsJS(client, op);
+
+    return op;
+}
+
+async function deleteOperationsJS(
+    client,
+    op
+) {
+    if (op.metadata?.depends) {
+        await deleteOperations(client, op.metadata.depends);
+    }
+
+    await client.operations().delete(op.name);
+}*/
