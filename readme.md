@@ -1,12 +1,13 @@
-PART A
+**PART A**
 1. Clone Signify: https://github.com/WebOfTrust/signify-ts.git
 2. Install docker if you don't already have it installed on your machine.
-3. Open the terminal, run `docker-compose up` This starts the three servers. witness, vlei, and agent.
+3. Open the terminal, and change directory into the cloned project folder. Then run `docker-compose up` This starts the three servers. witness, vlei, and agent.
 ![docker](./docs/Signify%20DockerImages.JPG)
 
-PART B
+**PART B**
+
 4. Clone https://github.com/landano/signify-native-wrapper switch to signify-browser-wrapper branch `git checkout signify-browser-wrapper`
-5. Run `npm run install`
+5. Run `npm install`
 6. Run `npm run build`
 7. This create files in `/dist/` folder. 
 ![dist](./docs/dist%20folder%20contents.JPG)
