@@ -4,6 +4,7 @@
 3. Open the terminal, and change directory into the cloned project folder. Then run `docker-compose up` This starts the three servers. witness, vlei, and agent.
 ![docker](./docs/Signify%20DockerImages.JPG)
 
+
 **PART B**
 
 4. Clone https://github.com/landano/signify-native-wrapper switch to signify-browser-wrapper branch `git checkout signify-browser-wrapper`
@@ -11,7 +12,7 @@
 6. Run `npm run build`
 7. This create files in `/dist/` folder. 
 ![dist](./docs/dist%20folder%20contents.JPG)
-8. Copy file `/dist/signify-browser.js` and paste it into any mendix project module eg: `javascriptsource\signifyts\src`
+8. Copy file `/dist/signify-browser.js` and paste it into javascript source of any mendix project module eg: `javascriptsource\<modulename>\src`
 ![Logo](./docs/Mendix%20Signify%20folder.JPG)
 9. Create a [mendix javascript action]() and import the library.
 ![Logo](./docs/Javascript%20example%20in%20mendix2.JPG)
